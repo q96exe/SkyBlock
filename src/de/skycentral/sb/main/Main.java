@@ -1,11 +1,15 @@
 package de.skycentral.sb.main;
 
+import de.skycentral.sb.commands.SetSpawn;
+import de.skycentral.sb.commands.Spawn;
 import de.skycentral.sb.utils.Data;
+import de.skycentral.sb.utils.LocationManager;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
-    public Main instance;
+    private static Main instance;
+    private LocationManager locationManager = new LocationManager();
 
     @Override
     public void onEnable() {
@@ -21,12 +25,17 @@ public class Main extends JavaPlugin {
 
     private void init() {
         //COMMANDS
-
+        getCommand("setspawn").setExecutor(new SetSpawn());
+        getCommand("spawn").setExecutor(new Spawn());
         //EVENTS
 
     }
 
-    public Main getInstance() {
+    public static Main getInstance() {
         return instance;
+    }
+
+    public LocationManager getLocationManager() {
+        return locationManager;
     }
 }

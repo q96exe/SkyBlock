@@ -9,7 +9,7 @@ public class LocationManager {
     private FileBuilder fb;
 
     public LocationManager() {
-        fb = new FileBuilder("plugins/LobbySystem", "locations.yml");
+        fb = new FileBuilder("plugins/SkyBlock", "locations.yml");
     }
 
     public void setLocation(String name, Location location) {
