@@ -1,9 +1,11 @@
 package de.skycentral.sb.main;
 
+import de.skycentral.sb.listener.JQListener;
 import de.skycentral.sb.schematic.CMD_schematic;
 import de.skycentral.sb.utils.Data;
 import de.skycentral.sb.utils.LocationManager;
 import org.bukkit.Bukkit;
+import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class Main extends JavaPlugin {
@@ -26,7 +28,8 @@ public class Main extends JavaPlugin {
         //COMMANDS
         getCommand("schematic").setExecutor(new CMD_schematic());
         //EVENTS
-
+        PluginManager pm = Bukkit.getPluginManager();
+        pm.registerEvents(new JQListener(), this);
     }
 
     public static Main getInstance() {

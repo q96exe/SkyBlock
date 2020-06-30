@@ -3,7 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/SkyBlock_jar</output-path>
     <root id="archive" name="SkyBlock.jar">
       <element id="module-output" name="SkyBlock" />
-      <element id="extracted-dir" path="$USER_HOME$/Desktop/Coding/APIs/OmelsAPI.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../API.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
