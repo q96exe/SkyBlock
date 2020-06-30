@@ -1,5 +1,6 @@
 package de.skycentral.sb.main;
 
+import de.skycentral.sb.schematic.CMD_schematic;
 import de.skycentral.sb.utils.Data;
 import de.skycentral.sb.utils.LocationManager;
 import org.bukkit.Bukkit;
@@ -23,7 +24,7 @@ public class Main extends JavaPlugin {
 
     private void init() {
         //COMMANDS
-
+        getCommand("schematic").setExecutor(new CMD_schematic());
         //EVENTS
 
     }
