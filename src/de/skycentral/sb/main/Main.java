@@ -1,7 +1,5 @@
 package de.skycentral.sb.main;
 
-import de.skycentral.sb.commands.SetSpawn;
-import de.skycentral.sb.commands.Spawn;
 import de.skycentral.sb.utils.Data;
 import de.skycentral.sb.utils.LocationManager;
 import org.bukkit.Bukkit;
@@ -25,8 +23,7 @@ public class Main extends JavaPlugin {
 
     private void init() {
         //COMMANDS
-        getCommand("setspawn").setExecutor(new SetSpawn());
-        getCommand("spawn").setExecutor(new Spawn());
+
         //EVENTS
 
     }
