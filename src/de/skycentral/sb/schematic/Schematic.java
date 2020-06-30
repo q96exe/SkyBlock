@@ -89,8 +89,8 @@ public class Schematic {
         return list;
     }
 
-    //MARV HAT EINEN KLEINEN 8--------->
-
     
+
+
 
 }
