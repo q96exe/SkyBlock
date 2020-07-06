@@ -88,9 +88,4 @@ public class Schematic {
         }
         return list;
     }
-
-    
-
-
-
 }

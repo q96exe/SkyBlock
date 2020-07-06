@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="API">
+  <library name="OmelsAPI">
     <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../../API.jar!/" />
+      <root url="jar://$USER_HOME$/Desktop/Coding/APIs/OmelsAPI.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

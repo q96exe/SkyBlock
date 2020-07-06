@@ -1,5 +1,6 @@
 package de.skycentral.sb.main;
 
+import de.skycentral.sb.commands.Island;
 import de.skycentral.sb.listener.JQListener;
 import de.skycentral.sb.schematic.CMD_schematic;
 import de.skycentral.sb.utils.Data;
@@ -27,6 +28,7 @@ public class Main extends JavaPlugin {
     private void init() {
         //COMMANDS
         getCommand("schematic").setExecutor(new CMD_schematic());
+        getCommand("island").setExecutor(new Island());
         //EVENTS
         PluginManager pm = Bukkit.getPluginManager();
         pm.registerEvents(new JQListener(), this);

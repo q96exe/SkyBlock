@@ -4,3 +4,5 @@ version: 0.1
 main: de.skycentral.sb.main.Main
 commands:
   schematic:
+  island:
+    aliases: [is]
